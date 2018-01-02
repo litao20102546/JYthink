@@ -17,3 +17,6 @@ def login(request):
 
 def coding(request):
      return render(request, 'coding.html')
+
+def contact(request):
+     return render(request, 'contact.html')

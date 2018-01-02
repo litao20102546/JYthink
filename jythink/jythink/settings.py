@@ -124,7 +124,7 @@ TEMPLATE_DIR = (
 	os.path.join(BASE_DIR, 'templates'),
 )
 STATICFILES_DIRS = (
-"bootstrap", os.path.join(STATIC_ROOT,BASE_DIR, 'bootstrap'),
+"images", os.path.join(STATIC_ROOT,BASE_DIR, 'images'),
 "desktop", os.path.join(STATIC_ROOT,BASE_DIR, 'desktop'),
 "jquery", os.path.join(STATIC_ROOT,BASE_DIR, 'jquery'),
 )

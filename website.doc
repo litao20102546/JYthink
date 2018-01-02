@@ -70,3 +70,43 @@ TODO：
 	开发手写板
         礼物配发
        
+
+
+
+浏览网站记录：
+Mac下安装及配置Eclipse  https://www.cnblogs.com/quickcodes/p/5399385.html
+Python搭建网站学习： http://edu.51cto.com//center/course/lesson/index?id=48050
+WEB IDE 搭建： https://zhuanlan.zhihu.com/p/22430099
+OJ搭建 https://github.com/QingdaoU/OnlineJudge
+账号注册登录：http://baidu.iqiyi.com/watch/3271427526277209049.html?&recFrom=site&list=2&&page=videoMultiNeed
+django 学习：http://so.iqiyi.com/so/q_python_django_web%E5%BC%80%E5%8F%91?source=input&sr=263058856285
+
+OJ Python测试题 http://www.pythontip.com/acm/problemCategory
+https://github.com/QingdaoU/OnlineJudgeDeploy
+http://docs.onlinejudge.me/#/
+https://github.com/QingdaoU/OnlineJudge
+
+了解比赛内容：http://www.noi.cn/
+
+
+Gmail和youtube都是python的。国内的豆瓣也是Python的
+
+virtualbox 安装 centos遇到的问题 http://www.linuxidc.com/Linux/2017-04/143209.htm
+1 Cannot find a valid baseurl for repo: base/7/x86_6
+  　1、打开 vi /etc/sysconfig/network-scripts/ifcfg-eth0（每个机子都可能不一样，但格式会是“ifcfg-eth数字”），把ONBOOT=no，改为ONBOOT=yes
+
+　　2、重启网络：service network restart
+
+2  pip install uwsgi :
+	UnicodeDecodeError: 'ascii' codec can't decode byte 0xe8 in position 40: ordinal not in range(128)
+		Try installing first libevent-devel and python-devel
+
+		yum install libevent-devel python-devel
+		and then installing
+
+		pip install uwsgi
+
+
+
+为什么选择我们
+
