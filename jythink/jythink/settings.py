@@ -127,4 +127,5 @@ STATICFILES_DIRS = (
 "images", os.path.join(STATIC_ROOT,BASE_DIR, 'images'),
 "desktop", os.path.join(STATIC_ROOT,BASE_DIR, 'desktop'),
 "jquery", os.path.join(STATIC_ROOT,BASE_DIR, 'jquery'),
+"fonts", os.path.join(STATIC_ROOT,BASE_DIR, 'fonts'),
 )

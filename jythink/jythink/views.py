@@ -20,3 +20,6 @@ def coding(request):
 
 def contact(request):
      return render(request, 'contact.html')
+
+def question(request):
+     return render(request, 'question.html')
