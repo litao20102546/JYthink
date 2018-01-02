@@ -1,30 +1,119 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta content=yes name=apple-mobile-web-app-capable><meta content=yes name=apple-touch-fullscreen><meta content="telephone=no,email=no" name=format-detection><meta name=flexible content="initial-dpr=1,maximum-dpr=1,user-scalable=no"><title>掌门1对1</title><link rel=stylesheet href=/static/css/index.css><script>//Flexible适配方案JS
-    	!function(){var a="@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}",b=document.createElement("style");if(document.getElementsByTagName("head")[0].appendChild(b),b.styleSheet)b.styleSheet.disabled||(b.styleSheet.cssText=a);else try{b.innerHTML=a}catch(c){b.innerText=a}}();!function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));</script><link href=/static/css/app.0b53399a66a83360d21bd98817926a34.css rel=stylesheet></head><body><div id=app><spinner v-show=isLoading></spinner><router-view></router-view></div><script src="https://www.sobot.com/chat/frame/js/entrance.js?sysNum=bfc2a73dae7342ada3d886355e2b10c3" data-args="manual=true" class=zhiCustomBtn id=zhichiScript></script><script>let PAGE_START_TIME = new Date().getTime()</script><script>var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?01442d5e53696298c69743660141221f";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();</script><script type=text/javascript>window._pt_lt = new Date().getTime();
-  window._pt_sp_2 = [];
-  _pt_sp_2.push('setAccount,6fbbcfb0');
-  var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-  (function() {
-    var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
-    atag.src = _protocol + 'js.ptengine.cn/6fbbcfb0.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(atag, s);
-  })();</script><script type=text/javascript>var _paq = _paq || []
-  _paq.push(['trackPageView'])
-  _paq.push(['enableLinkTracking']);
-  (function () {
-    var u = '//tongji.zmlearn.com/'
-    _paq.push(['setTrackerUrl', u + 'piwik.php'])
-    _paq.push(['setSiteId', '6'])
-    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0]
-    g.type = 'text/javascript'
-    g.async = true
-    g.defer = true
-    g.src = u + 'piwik.js'
-    s.parentNode.insertBefore(g, s)
-  })()</script><script type=text/javascript src=/static/js/manifest.3b0dad49fa673b162a0d.js></script><script type=text/javascript src=/static/js/vendor.7353e7383a47b2c61f5a.js></script><script type=text/javascript src=/static/js/app.f6e2da4d26b1b7d2e949.js></script></body></html>
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+     <!-- 引入jQuery -->
+    <script src="{% static 'jquery/jquery-3.2.1.js' %}"></script>
+     <!-- 引入 Bootstrap -->
+     <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+     <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+     <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>         
+	<link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}" type="text/css" media="all">
+	<link rel="stylesheet" href="{% static 'bootstrap/css/font-awesome.min.css' %}" />
+     <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    <title>简易思</title>       
+<!-- scrolling script -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+<!-- //scrolling script --> 
+</head>
+<body>
+<div class="header-top">
+		<div class="container">
+			<div class="header-top-right">
+				<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example1.com</a></p>
+				<p><i class="fa fa-phone" aria-hidden="true"></i> +1 234 567 8901</p>
+                                <p><a href="register">注册</a></p>
+                                <p><a href="login">登录</a></p>
+			</div>
+		</div>
+</div>
+
+		<div class="head">
+			<div class="container">
+					<div class="navbar-top">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+							  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+								 <div class="navbar-brand logo ">
+									<h1 class="animated wow pulse" data-wow-delay=".5s">
+	                                                                <a href="index.html"><img src="{% static 'desktop/logo.png' %}" height="50" width="50"/></a>
+									<!--<a href="index.html">E-Progress</a></h1>--!>
+								</div>
+
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							 <ul class="nav navbar-nav link-effect-4">
+							<li class="active"><a href="index.html" data-hover="Home">主页</a> </li>
+								<li><a href="class.html" data-hover="About">教学课程 </a> </li>
+								<li><a href="question.html"  data-hover="Gallery">题库</a></li>
+								<li><a href="coding.html"  data-hover="Gallery">编程</a></li>
+								<li class="dropdown">
+									<a href="news.html" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown">资讯<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="zizhu.html">自主招生</a></li>
+										<li><a href="competition.html">信息学竞赛</a></li>
+									</ul>
+							  </li>
+								<li><a href="contact.html" data-hover="Contact">关于我们</a></li>
+							  </ul>
+							</div><!-- /.navbar-collapse -->
+						</div>
+					  <div class="clearfix"></div>	
+			</div>
+<!-- bootstrap 特性容器 -->
+ <div class="container">
+
+<div id="myCarousel" class="carousel slide">
+	<!-- 轮播（Carousel）指标 -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>   
+	<!-- 轮播（Carousel）项目 -->
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="{% static 'desktop/main.jpg' %}" height="800" width="800" alt="First slide">
+		</div>
+		<div class="item">
+			<img src="{% static 'desktop/main1.jpg' %}" height="800" width="800" alt="First slide">
+		</div>
+		<div class="item">
+			<img src="{% static 'desktop/main2.jpg' %}" height="800" width="800" alt="First slide">
+		</div>
+	</div>
+	<!-- 轮播（Carousel）导航 -->
+	<a class="carousel-control left" href="#myCarousel" 
+	   data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#myCarousel" 
+	   data-slide="next">&rsaquo;</a>
+     <img  />
+ </div>
+<div style="width:1000px; height:500px; background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514824626357&di=a6852b4b7a773c594090a896f9202105&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F00%2F94%2F40%2F47bOOOPIC5f.jpg);">为什么选择我们
+<p><a href="#">拥有良好的导师团队，全部来自985，211高校硕士和博士</a></p>
+<p><a href="#">严格的质量把控</a></p>
+<p><a href="#">专业的1对1 课程培训</a></p>
+<p><a href="#">先进的鼓励教学模式</a></p>
+<p><a href="#">面试通过率高达80%以上</a></p>
+</div>
+</body>
+</html>
