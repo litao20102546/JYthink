@@ -14,3 +14,6 @@ def register(request):
 
 def login(request):
      return render(request, 'login.html')
+
+def coding(request):
+     return render(request, 'coding.html')
