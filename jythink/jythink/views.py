@@ -23,3 +23,9 @@ def contact(request):
 
 def question(request):
      return render(request, 'question.html')
+
+def classes(request):
+     return render(request, 'class.html')
+
+def show(request):
+     return render(request, 'show.html')

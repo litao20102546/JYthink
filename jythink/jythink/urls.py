@@ -27,4 +27,6 @@ urlpatterns = [
     url(r'^coding', views.coding),
     url(r'^contact', views.contact),
     url(r'^question', views.question),
+    url(r'^class', views.classes),
+    url(r'^show', views.show),
 ]
