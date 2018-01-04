@@ -4,6 +4,7 @@
 <head lang="en">
     <meta charset="UTF-8">
      <!-- 引入jQuery -->
+        <script src="{% static 'bootstrap/js/contact/jquery-2.1.4.min.js' %}"></script>
         <script src="{% static 'jquery/jquery-3.2.1.js' %}"></script>
      <!-- 引入 Bootstrap -->
      <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
@@ -61,14 +62,13 @@
 						  </button>
 							 <div class="navbar-brand logo ">
 								<h1 class="animated wow pulse" data-wow-delay=".5s">
-                                                                <a href="#"><img src="{% static 'images/logo.png' %}" height="50" width="30"/></a>
-								<!--<a href="#">E-Progress</a></h1>--!>
+                                                                <a href="index.html"><img src="{% static 'images/logo.png' %}" height="50" width="30"/></a>
 							</div>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						 <ul class="nav navbar-nav link-effect-4">
-						<li class="active"><a href="#" data-hover="Home">主页</a> </li>
+						<li class="active"><a href="index.html" data-hover="Home">主页</a> </li>
 							<li><a href="class.html" data-hover="About">教学课程 </a> </li>
 							<li><a href="question.html"  data-hover="Gallery">题库</a></li>
 							<li><a href="coding.html"  data-hover="Gallery">编程</a></li>
@@ -88,6 +88,46 @@
 <br>
 {% block content %}
 {% endblock %}
+<!-- clients js file-->
+	<script src="{% static 'bootstrap/js/contact/jquery.wmuSlider.js' %}"></script> 
+		<script>
+			$('.example1').wmuSlider();         
+		</script> 
+<!-- //clients js file -->
  
+<!-- Jarallax -->
+<script src="{% static 'bootstrap/js/contact/jarallax.js' %}"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+<!-- //Jarallax -->
+
+<!-- smooth scrolling -->
+	<script src="{% static 'bootstrap/js/contact/SmoothScroll.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bootstrap/js/contact/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bootstrap/js/contact/easing.js' %}"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+<!-- smooth scrolling -->
 </body>
 </html>
