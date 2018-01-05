@@ -29,3 +29,9 @@ def classes(request):
 
 def show(request):
      return render(request, 'show.html')
+
+def news(request):
+     return render(request, 'news.html')
+
+def article(request):
+     return render(request, 'article.html')

@@ -24,3 +24,5 @@ orangelideMacBook-Pro:~ orangeli$ telnet 192.168.1.60 8002
 	STATICFILES_DIRS = [　　　　　　　　　　　　＃若存放静态文件的static目录在project目录下，则用该定义
    	 os.path.join(BASE_DIR, "static"),
 	]
+5 
+unzip -O CP936 *.zip

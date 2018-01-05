@@ -29,4 +29,6 @@ urlpatterns = [
     url(r'^question', views.question),
     url(r'^class', views.classes),
     url(r'^show', views.show),
+    url(r'^news', views.news),
+    url(r'^article', views.article),
 ]
