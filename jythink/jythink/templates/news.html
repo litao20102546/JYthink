@@ -1,65 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/oindex.css">
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
-</head>
+	<link rel="stylesheet" href="{% static 'bootstrap/css/news/oindex.css' %}">
+	<script type="text/javascript" src="{% static 'bootstrap/js/news/jquery-1.8.3.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bootstrap/js/news/jquery.superslide.2.1.1.js' %}"></script>
 <body style=" background: #f2f1f1">
 	<!--头部-->
-		<header class="oindex-head">
-			<div class="o-top">
-				<div class="width1180">
-					<span class="fl">您好，欢迎访问长沙注册公司_代理记账报税_工商注册_商标注册_易知猴财税-专注于企业成长一站式服务平台
-					</span>
-					<span class="fr">
-						<a href="#" title="登录">登录</a>
-						<a href="#" title="注册">注册</a>
-						<a href="#" title="易知猴首页"><i class="o-home"></i>易知猴首页</a>
-						<a href="#" title="联系我们" ><i class="o-contract"></i>联系我们</a>
-						<!--登录后
-						<a title="管理员" href="http://www.yizhihou.com/member/" target="_blank" rel="nofollow">嘉客</a>
-						<a href="http://www.yizhihou.com/member/logout.php" rel="nofollow">退出</a>
-						-->
-					</span>
-				</div>
-			</div>
-			<div clear></div>
-			<div class="head-muild">
-				<div class="width1180">
-					<h1 class="fl"><img src="images/logo.png"></h1>
-					<div class="o-search">
-						<form>
-							<input type="text" class="search-text"  placeholder="请输入您搜索的关键词"><button class="search-bnt"><img src="images/search-i.png">  搜索</button>
-						</form>
-					</div>
-					<div class="fl search-keywords">
-						<a href="#" title="长沙注册公司">长沙注册公司</a>       <a href="#" title="注册流程">注册流程</a>      <a href="#" title="注册费用">注册费用</a>
-					</div>
-					<div class="clearfix"></div>
-					<nav>
-						<div class="fenlei-nav fl">全部分类</div>
-						<ul class="fl">
-							<li><a href="index.html" title="首页" class="on">首页</a></li>
-							<li><a href="公司注册.html" title="公司注册">公司注册<img src="images/hot.gif"></a></li>
-							<li><a href="服务详情.html" title="代理记账">代理记账<img src="images/hot.gif"></a></li>
-							<li><a href="#" title="商标注册">商标注册</a></li>
-							<li><a href="#" title="资质代办">资质代办</a></li>
-							<li><a href="新闻中心.html" title="工商知识">工商知识</a></li>
-							<li><a href="关于我们.html" title="关于我们">关于我们</a></li>
-							<span class="fr"><img src="images/o-tel.gif"></span>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
 	<!--头部-->
 
 	<div class="width1180">
 		<div class="n-banner">
-			<img src="images/n-banner.png">
+			<img src="{% static 'bootstrap/images/news/n-banner.png' %}">
 		</div>
 		<!--左边-->
 		<div class="news-left-box">
@@ -162,7 +114,7 @@
 		<!--右边-->
 		<div class="news-right">
 			<div class="xq-postion">
-				<span class="postion-span"><img src="images/xq-02.jpg">有限责任公司注册</span>
+			<span class="postion-span">有限责任公司注册</span>
 				<span class="fr">您现在的位置：首页>国内商标注册</span>
 			</div>
 			<div class="news-list">
@@ -254,67 +206,6 @@
 	</div>
 <div class="clearfix"></div>
 		<!--尾部-->
-	<footer class="o-footer">
-		<div class="footer-t ">
-		<div class="width1180">
-			<div class="footert-left">
-				<ul>
-					<p>关于易知猴</p>
-					<li><a href="#" title="了解我们">了解我们</a></li>
-					<li><a href="#" title="品牌故事">品牌故事</a></li>
-					<li><a href="#" title="加入我们">加入我们</a></li>
-					<li><a href="#" title="联系我们">联系我们</a></li>
-				</ul>
-
-				<ul>
-					<p>公司代办</p>
-					<li><a href="#" title="注册公司">注册公司</a></li>
-					<li><a href="#" title="公司变更">公司变更</a></li>
-					<li><a href="#" title="公司注销">公司注销</a></li>
-					<li><a href="#" title="公司转让">公司转让</a></li>
-				</ul>
-
-				<ul>
-					<p>代理记账</p>
-					<li><a href="#" title="记账报税">记账报税</a></li>
-					<li><a href="#" title="财税代办">财税代办</a></li>
-					<li><a href="#" title="税务筹划">税务筹划</a></li>
-					<li><a href="#" title="财税审计">财税审计</a></li>
-				</ul>
-
-				<ul>
-					<p>资质办理</p>
-					<li><a href="#" title="食品经营许可证">食品经营许可证</a></li>
-					<li><a href="#" title="卫生许可">卫生许可</a></li>
-					<li><a href="#" title="进出许可">进出许可</a></li>
-					<li><a href="#" title="道路运输许可证">道路运输许可证</a></li>
-				</ul>
-				
-				<ul>
-					<p>知识产权</p>
-					<li><a href="#" title="商标注册">商标注册</a></li>
-					<li><a href="#" title="专利申请">专利申请</a></li>
-					<li><a href="#" title="版权登记">版权登记</a></li>
-				</ul>
-
-			</div>
-			<div class="foot-contract">
-				<p>网 址：www.hcx123.com</p>
-				<p>邮 箱：313627421@qq.com</p>
-				<p>电 话：18900728915  </p>
-				<p>地 址：湖南省长沙市雨花区香樟路瑞都华庭2栋2
-单元1105室</p>
-				<p>在线咨询：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=418146334&amp;site=http://www.yizhihou.net/&amp;menu=yes" target="_blank" title="在线咨询" rel="nofollow"><img src="images/single_main_left_box3_QQ.png"></a></p>
-			</div>
-			</div>
-		</div>
-		<div class="clearfix"></div>
-		<div class="foot-b">
-			<div class="width1180">
-				<span class="fl">CopyRight@2001-2016 易知猴财税 湘ICP备15004606号-11</span> <img src="images/k8008_B3_Top001.gif"><img src="images/k8008_B3_Top008.gif"><img src="images/k8008_B3_Top009.gif"><img src="images/k8008_B3_Top010.gif">
-			</div>
-		</div>
-	</footer>
 	<!--尾部-->
-</body>
-</html>
+{% include 'online.html' %}
+{% endblock %}
