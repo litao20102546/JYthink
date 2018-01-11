@@ -21,3 +21,6 @@ https://github.com/QingdaoU/OnlineJudge
 
 Gmail和youtube都是python的。国内的豆瓣也是Python的
 
+视频播放插件Video.js
+          http://www.jq22.com/jquery-info404
+           http://www.jq22.com/jqueryUI-1-jq
