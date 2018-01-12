@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
+	<link href="{% static 'bootstrap/css/video-js.css' %}" rel="stylesheet">	
+	<style>
+		.m{ width: 740px; height: 400px; margin-left: auto; margin-right: auto; margin-top: 100px; }
+	</style>
  <div class="container">
 
 <div id="myCarousel" class="carousel slide">
@@ -249,13 +253,44 @@
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button> 
-					<iframe src="{% static 'test.mp4' %}"></iframe>
+					<button type="button" class="close video-close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</button>
+
+					<div class="m">
+						<video id="my-video" class="video-js" controls preload="auto" width="560" height="400"
+						  poster="{% static 'bootstrap/images/welcome.jpg' %}" data-setup="{}">
+							<source src="http://jq22com.qiniudn.com/jq22-sp.mp4" type="video/mp4">
+							<p class="vjs-no-js">
+							  To view this video please enable JavaScript, and consider upgrading to a web browser that
+							  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+							</p>
+						  </video>
+		 
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- //Modal5 -->
 <!-- //model-video -->
+ <script src="{% static 'bootstrap/js/video.min.js' %}"></script>	
+<script type="text/javascript">
+	var myPlayer = videojs('my-video');
+	videojs("my-video").ready(function(){
+		var myPlayer = this;
+		myPlayer.pause();
+	});
+</script>
+<script type="text/javascript"></script>
+<script>
+	$(document).ready(function(){
+  		$(".video-close").click(function(){
+  			var myPlayer = videojs('my-video');
+			videojs("my-video").ready(function(){
+    				var myPlayer = this;
+				myPlayer.pause();
+			});
+  		});
+	});
+</script>
 {% include 'online.html' %}
 {% endblock %}
