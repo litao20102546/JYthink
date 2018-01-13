@@ -1,9 +1,19 @@
 
 from django.http import HttpResponse,HttpResponseRedirect
 from django.shortcuts import render_to_response,render
- 
-def hello(request):
-    return HttpResponse("Hello world ! ")
+#from django.db import models 
+from jythink.models import Message
+
+def test(request):
+    if request.method == "POST":
+        username = request.POST.get("username", None)
+        print username
+        password = request.POST.get("password", None)
+        #Message.objects.create(username=username, password=password)
+        M = Message(username=username, password=password)
+        M.save()
+        print "ok"
+    return render(request, 'test.html') 
 
 #Bootstrap test
 def index(request):

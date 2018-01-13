@@ -3,7 +3,7 @@
 {% block content %}
 	<link href="{% static 'bootstrap/css/video-js.css' %}" rel="stylesheet">	
 	<style>
-		.m{ width: 740px; height: 400px; margin-left: auto; margin-right: auto; margin-top: 100px; }
+		.m{ width: 940px; height: 400px; margin-left: -10px; margin-right: 20px; margin-top: 30px; }
 	</style>
  <div class="container">
 
@@ -258,7 +258,7 @@
 					<div class="m">
 						<video id="my-video" class="video-js" controls preload="auto" width="560" height="400"
 						  poster="{% static 'bootstrap/images/welcome.jpg' %}" data-setup="{}">
-							<source src="http://jq22com.qiniudn.com/jq22-sp.mp4" type="video/mp4">
+							<source src="{%static 'test.mp4' %}" type="video/mp4">
 							<p class="vjs-no-js">
 							  To view this video please enable JavaScript, and consider upgrading to a web browser that
 							  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>

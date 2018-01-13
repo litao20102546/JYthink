@@ -1,5 +1,6 @@
 framework: https://www.cnblogs.com/chenice/p/6921727.html
           http://www.runoob.com/django/django-nginx-uwsgi.html
+
 Django：  https://code.ziqiangxuetang.com/django/django-template2.html
           http://python.usyiyi.cn/translate/django_182/topics/db/models.html
 Nginx:    http://www.nginx.cn/doc/index.html
@@ -24,3 +25,4 @@ Gmail和youtube都是python的。国内的豆瓣也是Python的
 视频播放插件Video.js
           http://www.jq22.com/jquery-info404
            http://www.jq22.com/jqueryUI-1-jq
+mysql install : http://blog.csdn.net/aizhiqiang2/article/details/51685308 

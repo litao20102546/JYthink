@@ -19,7 +19,7 @@ from . import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^hello',views.hello),
+    url(r'^test',views.test),
     url(r'^$', views.index),
     url(r'^index', views.index),
     url(r'^register', views.register),
@@ -31,4 +31,5 @@ urlpatterns = [
     url(r'^show', views.show),
     url(r'^news', views.news),
     url(r'^article', views.article),
+    url(r'^online/', include('online.urls')),
 ]

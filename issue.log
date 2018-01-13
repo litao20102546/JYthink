@@ -40,3 +40,9 @@ virtualbox 安装 centos遇到的问题 http://www.linuxidc.com/Linux/2017-04/14
 		and then installing
 
 		pip install uwsgi
+8 pip install Mysql-python
+	error: Command python setup.py egg_info failed with error code 1 in /tmp/pip_build_root/MysqL-python Storing debug log for failure in /root/.pip/pip.log
+	[Answer]yum install python-devel mysql-devel
+9 mysql no table
+	python manage.py makemigrations jythink
+	python manage.py migrate jythink
