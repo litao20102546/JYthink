@@ -50,7 +50,6 @@ a:focus, a:hover {
 }
 /*-- //Reset-Code --*/
 .header-top {
-    padding: 1em 0;
     background: #FFFFFF;
 }
 .header-top-left p,.header-top-right p{
@@ -329,9 +328,6 @@ h3.agileits-title {
 .modal-body {
     padding:0;
 }
-.modal-body img {
-    padding: 2em 2em 0 2em;
-}
 .modal-content {
     border-radius: 0;
 }
@@ -549,7 +545,7 @@ ul li input[type="checkbox"]+label span:first-child {
     bottom: 4px;
 }
 input[type="radio"], input[type="checkbox"] {
-    display: none;
+    display: inline-block;
 }
 ul li input[type="checkbox"]:checked+label span:first-child:before {
     content: "";

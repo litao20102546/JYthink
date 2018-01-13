@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from django.middleware import csrf
 
 # Create your views here.
 #coding=utf-8
@@ -13,12 +14,11 @@ import pdb
 
 def test(request):
     print "OK"
-    pdb.set_trace()
     if request.method == "POST":
         username = request.POST.get("username", None)
         password = request.POST.get("password", None)
         User.save()
-    return HttpResponse('test.html')
+    return render(request,'test1.html')
 
 #表单
 class UserForm(forms.Form): 
@@ -27,24 +27,26 @@ class UserForm(forms.Form):
 
 
 #注册
-def regist(req):
-    if req.method == 'POST':
-        uf = UserForm(req.POST)
+def regist(request):
+    if request.method == 'POST':
+        print "OK---------------------------"
+        uf = UserForm(request.POST)
         if uf.is_valid():
             #获得表单数据
             username = uf.cleaned_data['username']
             password = uf.cleaned_data['password']
             #添加到数据库
             User.objects.create(username= username,password=password)
-            return HttpResponse('regist success!!')
+            return render_to_response('register.html', context = 'regist success!!')
     else:
+        print "else----------------------------"
         uf = UserForm()
-    return render_to_response('regist.html',{'uf':uf}, context_instance=RequestContext(req))
+    return render_to_response('register.html',context = {'uf':uf}) 
+
 
 #登陆
 def login(req):
     print "hello world"
-    pdb.set_trace()
     if req.method == 'POST':
         uf = UserForm(req.POST)
         if uf.is_valid():
@@ -65,7 +67,7 @@ def login(req):
                 return HttpResponseRedirect('/online/login/')
     else:
         uf = UserForm()
-    return render_to_response('log.html',{'uf':uf},context_instance=RequestContext(req))
+    return render(req, 'log.html',{'uf':uf})
 
 #登陆成功
 def index(req):
