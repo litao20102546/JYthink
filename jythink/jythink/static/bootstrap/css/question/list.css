@@ -15,7 +15,7 @@ a:hover{text-decoration:none;color:#118ecc;}
 .screenBox dl{border-bottom:#e6e6e6 1px dashed;overflow:hidden;padding:10px 0;_zoom:1;}
 .screenBox dl dt{float:left;}
 .screenBox dl dt{text-align:left;width:80px;font-weight:600;padding-top:6px;}
-.screenBox dl dd{position:relative;padding-left:0px;width:620px;padding-right:48px;float:left;padding-top:0px;vertical-align:middle;}
+.screenBox dl dd{position:relative;padding-left:0px;width:780px;padding-right:48px;padding-top:0px;vertical-align:middle;}
 .screenBox dl dd label{line-height:14px;margin:0px 25px 0px 0px;color:#666;overflow:hidden;text-decoration:none;float:left;display:block;vertical-align:middle;}
 .custom{position:absolute;right:-200px;top:0;width:260px;}
 #custext1,#custext2{width:44px;}
