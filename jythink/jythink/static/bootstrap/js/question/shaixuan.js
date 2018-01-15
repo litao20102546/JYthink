@@ -136,7 +136,7 @@ $('div.eliminateCriteria').click(function(){
     $(oSelectList).trigger('click', 1);
 })
 
-$('.clearList').find('em').live('click',function(){
+$('.clearList').find('em').on('click',function(){
     var self = $(this);
     var val = self.prev().html() + '|' + self.prev().prev().html();
     var n = -1;
