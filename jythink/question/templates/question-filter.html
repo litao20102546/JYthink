@@ -1,7 +1,4 @@
-{% extends 'base.html' %}
-{% block content %}
 {% load staticfiles %}
-<link rel="stylesheet" href="{% static 'bootstrap/css/question/article.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/question/list.css' %}"/>
 <script type="text/javascript" src="{% static 'bootstrap/js/question/jquery-1.5.1.js' %}"></script>
 <script type="text/javascript" src="{% static 'bootstrap/js/question/ui.tab.js' %}"></script>
@@ -9,12 +6,12 @@
 <!--选项卡切换-->
 $(document).ready(function(){
 	var tab = new $.fn.tab({
-		tabList:"#demo11 .ui-tab-container .ui-tab-list li",
-		contentList:"#demo11 .ui-tab-container .ui-tab-content"
+		tabList:"#demo1 .ui-tab-container .ui-tab-list li",
+		contentList:"#demo1 .ui-tab-container .ui-tab-content"
 	});
 	var tab = new $.fn.tab({
-		tabList:"#demo11 .ui-tab-container .ui-tab-list2 li",
-		contentList:"#demo11 .ui-tab-container .ui-tab-content2"
+		tabList:"#demo1 .ui-tab-container .ui-tab-list2 li",
+		contentList:"#demo1 .ui-tab-container .ui-tab-content2"
 	});		
 });	
 </script>
@@ -23,7 +20,7 @@ $(document).ready(function(){
 
 <!--点击更多-->
 <script>
-$(document).ready(function(e){
+$(document).ready(function(){
 	$("#selectList").find(".more").toggle(function(){
 		$(this).addClass("more_bg");
 		$(".more-none").show()
@@ -41,7 +38,7 @@ $(document).ready(function(e){
 		<div style="padding:10px 30px 10px 10px;">
 			<div class="screen-address">
 				<div class="list-tab">
-					<div id="demo11" class="clearfix">
+					<div id="demo1" class="clearfix">
 						<div class="jiud-name">酒店位置</div>
 						<div class="ui-tab-container">
 							<ul class="clearfix ui-tab-list">
@@ -155,7 +152,6 @@ $(document).ready(function(e){
 	</div>
 
 </div>
-{% endblock %}
 
 
 
