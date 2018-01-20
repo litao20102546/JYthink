@@ -140,23 +140,3 @@ def login(request):
         print "login failed"
         return render(request, 'index.html', context = "error")
 
-def coding(request):
-     return render(request, 'coding.html')
-
-def contact(request):
-     return render(request, 'contact.html')
-
-def question(request):
-     return render(request, 'question.html')
-
-def classes(request):
-     return render(request, 'class.html')
-
-def show(request):
-     return render(request, 'show.html')
-
-def news(request):
-     return render(request, 'news.html')
-
-def article(request):
-     return render(request, 'article.html')

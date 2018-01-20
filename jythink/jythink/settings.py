@@ -39,6 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'jythink',
     'online',
+    'question',
+    'classes',
+    'contact',
+    'news',
+    'coding',
 ]
 
 MIDDLEWARE = [
@@ -129,6 +134,7 @@ STATIC_URL = '/static/'
 TEMPLATE_DIR = (
 	os.path.join(BASE_DIR, 'templates'),
 	os.path.join(BASE_DIR, '../online/templates'),
+	os.path.join(BASE_DIR, '../question/templates'),
 )
 STATICFILES_DIRS = (
 "images", os.path.join(STATIC_ROOT,BASE_DIR, 'images'),

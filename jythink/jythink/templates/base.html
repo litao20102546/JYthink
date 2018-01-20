@@ -141,12 +141,12 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						 <ul class="nav navbar-nav link-effect-4">
-					          	<li class="active"><a href="index.html" data-hover="Home">主页</a> </li>
-							<li><a href="class.html" data-hover="About">教学课程 </a> </li>
-							<li><a href="question.html"  data-hover="Gallery">题库</a></li>
-							<li><a href="coding.html"  data-hover="Gallery">编程</a></li>
-							<li><a href="news.html"  data-hover="Gallery">资讯</a></li>
-							<li><a href="contact.html" data-hover="Contact">关于我们</a></li>
+					          	<li class="active"><a href="../" data-hover="Home">主页</a> </li>
+							<li><a href="../classes/" data-hover="About">教学课程 </a> </li>
+							<li><a href="../question/"  data-hover="Gallery">题库</a></li>
+							<li><a href="../coding/"  data-hover="Gallery">编程</a></li>
+							<li><a href="../news/"  data-hover="Gallery">资讯</a></li>
+							<li><a href="../contact/" data-hover="Contact">关于我们</a></li>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div>
@@ -365,7 +365,7 @@
                                 <img class="verify-code" src="" source="https://www.shiyanlou.com/captcha.gif">
                             </div>
                             <div class="form-group">
-                                <input class="btn btn-primary" name="submit" type="submit" value="注册">
+                                <input class="btn btn-primary" name= "submit" type="submit" id="submit" value="注册">
                             </div>
                             <div class="form-group agree-privacy">
                                 注册表示您已经同意我们的<a href="privacy/index.html" target="_blank">隐私条款</a>
@@ -390,6 +390,16 @@
 
     <script src="{% static 'bootstrap/js/register/lib.js' %}"></script>
 <script src="{% static 'bootstrap/js/register/index.js' %}"></script>
+<!--
+<script>
+$(document).ready(function(){
+	$("#submit").click(function(){
+		$("#sign-modal").modal('toggle');
+		$(".modal-backdrop").remove();
+	});
+});
+</script>
+-->
 
 <!--/login and logout-->
 </body>
